@@ -1,0 +1,117 @@
+/* Imposta uno stile di base per il body */
+body {
+    font-family: Arial, sans-serif; /* Font principale dell'intera pagina */
+    margin: 0; /* Rimuove i margini predefiniti del browser */
+    padding: 0; /* Rimuove i padding predefiniti del browser */
+    background-color: #f0f0f0; /* Imposta uno sfondo grigio chiaro per il body */
+}
+
+/* Stile di base per l'header */
+header {
+    background-color: black; /* Colore di sfondo nero */
+    display:flex;
+    justify-content: center;
+    color: white; /* Testo bianco */
+    text-align: center; /* Allinea il contenuto dell'header al centro */
+    padding: 1rem 0; /* Aggiunge 1 rem di padding sopra e sotto l'header */
+}
+
+#header-image {
+    width: 130px; /* Larghezza dell'immagine */
+    height: auto; /* Altezza automatica in base alla larghezza */
+    margin-top: 10px; /* Spazio sopra l'immagine */
+    border-radius: 5px; /* Bordi arrotondati */
+}
+
+.title{
+    margin-top: 4%; /* Spazio sopra per mettere il titolo centrato */
+    padding-left: 15px; /* Padding a sinistra per lascirare uno spazio tra titolo e immagine*/
+}
+
+#confirmation{
+    margin-top: 4%; /* Spazio sopra*/
+}
+
+/* Stile di base per il main */
+main {
+    margin: 20px; /* Aggiunge un margine intorno al contenuto principale */
+    display: flex; /* Usa flexbox per distribuire gli elementi interni */
+    justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+    flex-wrap: wrap; /* Consente agli elementi di andare a capo su più righe se necessario */
+}
+
+/* Stile per le sezioni di prenotazione */
+#reservations, #reservation {
+    background-color: white; /* Sfondo bianco per i box */
+    padding: 20px; /* Padding interno ai box */
+    border-radius: 8px; /* Angoli arrotondati */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera */
+    width: 45%; /* Ogni box occupa il 45% della larghezza del contenitore */
+}
+
+/* Stile specifico per la visualizzazione delle prenotazioni */
+#info-reservation {
+    padding-top: 1%; /* Aggiunge uno spazio sopra il contenuto della prenotazione */
+}
+
+/* Stile globale per tutti gli h2 (titoli) */
+h2 {
+    color: #333; /* Colore del testo grigio scuro */
+}
+
+/* Stile globale per tutte le label */
+label {
+    display: block; /* Le etichette sono visualizzate come blocchi separati */
+    margin-top: 10px; /* Spazio sopra ogni label */
+    font-weight: bold; /* Grassetto per evidenziare le etichette */
+}
+
+/* Stile globale per tutti gli input, select e button */
+input, select, button {
+    width: 100%; /* Gli elementi riempiono l'intera larghezza disponibile */
+    padding: 10px 0px; /* Padding sopra e sotto ogni elemento */
+    margin-top: 5px; /* Spazio sopra ogni elemento */
+    border-radius: 4px; /* Arrotonda leggermente i bordi */
+    border: 1px solid #ccc; /* Bordo grigio chiaro */
+}
+
+/* Stile globale per tutti i bottoni */
+button {
+    background-color: #0066cc; /* Sfondo blu scuro */
+    color: white; /* Testo bianco */
+    cursor: pointer; /* Cambia il cursore in modalità puntatore (mano) */
+}
+
+/* Cambia lo stile del bottone quando ci si passa sopra con il mouse */
+button:hover {
+    background-color: #005bb5; /* Colore di sfondo leggermente più scuro */
+}
+
+/* Stile specifico per i bottoni "Elimina" e "Modifica" */
+#delete, #edit {
+    color: white; /* Testo bianco */
+    border: none; /* Rimuove il bordo */
+    padding: 5px 0px; /* Aggiunge padding sopra e sotto */
+    cursor: pointer; /* Cambia il cursore in modalità puntatore (mano) */
+    width: 60px; /* Larghezza fissa per i bottoni */
+    float: right; /* Posiziona i bottoni a destra del contenitore */
+    margin: 1%; /* Aggiunge un piccolo margine intorno ai bottoni */
+}
+
+/* Stile specifico per il bottone "Elimina" */
+#delete {
+    background-color: red; /* Colore di sfondo rosso per evidenziare l'azione di eliminazione */
+}
+
+/* Cambia il colore di sfondo del bottone "Elimina" quando ci si passa sopra */
+#delete:hover {
+    background-color: darkred; /* Colore di sfondo rosso scuro al passaggio del mouse */
+}
+
+/* Stile per la visualizzazione su dispositivi con schermi più piccoli */
+@media screen and (max-width: 1144px) {
+    #reservations, #reservation {
+        width: 100%; /* I box occupano l'intera larghezza del contenitore */
+        margin-bottom: 20px; /* Aggiunge spazio tra i box per evitare sovrapposizioni */
+    }
+}

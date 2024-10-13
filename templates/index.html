@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenotazioni Palestra Comasina</title>
+    <link rel="icon" href="../img/logo.jpg" type="image/jpeg"><!-- Favicon -->
+    <link rel="stylesheet" href="../styles/style.css"> <!-- Stile css -->
+</head>
+<body>
+    <header>
+       <img src="../img/logo.jpg" alt="Logo Palestra" id="header-image">
+        <h1 class="title">Prenotazione Lezioni Palestra</h1>
+    </header>
+
+    <!-- Contenuto della pagina -->
+    <main class="content-boxs">
+        <!-- Sezione per prenotare una lezione -->
+        <section id="reservation">
+            <h2>Effettua la Prenotazione</h2>
+            <form id="booking-form">
+                <label for="lesson-select">Scegli una lezione:</label>
+                <select id="lesson-select">
+                    <!-- Le opzioni delle lezioni verranno popolate con JavaScript -->
+                </select>
+
+                <label for="lesson-date">Seleziona la data:</label>
+                <input type="date" id="lesson-date" required>  <!-- Campo per la data -->
+
+                <label for="user-name">Nome:</label>
+                <input type="text" id="user-name" required> <!-- Campo per il nome-->
+
+                <label for="user-surname">Cognome:</label>
+                <input type="text" id="user-surname" required> <!-- Campo per il cognome -->
+
+                <button type="submit">Prenota</button>
+            </form>
+
+            <div id="confirmation"></div>
+        </section>
+
+        <!-- Sezione per visualizzare le prenotazioni -->
+        <section id="reservations">
+            <h2>Prenotazioni Effettuate</h2>
+            <div id="reservations-container">
+                <!-- Le prenotazioni verranno mostrate qui -->
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <script src="../js/script.js"></script> <!-- Percorso js -->
+</body>
+</html>
