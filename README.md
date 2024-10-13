@@ -3,6 +3,7 @@ Le imprese nel settore terziario, come hotel, ristoranti o servizi di trasporto,
 richiedono sistemi di prenotazione efficienti per gestire la clientela. 
 
 Passi per l'avvio del progetto 
+
 1- Scaricaricare PyCharm Community Edition 
 2- Installare Python 3.12.3
 3- Verifica dell'installazione di Python : python --version
